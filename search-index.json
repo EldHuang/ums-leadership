@@ -1,0 +1,18 @@
+
+[
+  {
+    "title": "Home",
+    "url": "/index.html",
+    "content": "Welcome to our homepage. We provide services and support to our users."
+  },
+  {
+    "title": "Contact",
+    "url": "/contact.html",
+    "content": "You can reach us by email or visit our office. Our address is 123 Main Street."
+  },
+  {
+    "title": "About",
+    "url": "/about.html",
+    "content": "We are a small team dedicated to building helpful web tools for the community."
+  }
+]

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- DO NOT CHANGE THE <head> PART -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMS Leadership</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fascinate+Inline&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="./main.js" />
+  </head>
+  <!-- DO NOT CHANGE THE PART ABOVE -->
+
+  <!-- NAVIGATION BAR CODE -->
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black"
+      aria-label="Offcanvas navbar large"
+    >
+      <!-- TITLE -->
+      <div class="container-fluid">
+        <a class="nav-link navbar-brand text" href="index.html">
+          <img src="./assets/images/UMS-Logo.png" alt="Logo" height="40px" />
+          UMS Leadership</a
+        >
+
+        <!-- SMOOTHENER + NAVBAR OFFCANVAS (SMALL SCREEN) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <!-- NAVBAR OFFCANVAS NAME -->
+            <h2 class="fascinate-inline-regular">Menu</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- PAGES IN NAVBAR-->
+          <!-- change ONLY WHITE text -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./clubs.html">Clubs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./forms.html">Forms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./store.html">Student Store</a>
+              </li>
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown hover-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Associated Student Body - ASB
+                </a>
+                <!-- ASB OFFICERS -->
+                <ul class="dropdown-menu unravel-dropdown">
+                  <li>
+                    <a class="dropdown-item" href="./officers/dates.html"
+                      >ASB Meeting Dates</a
+                    >
+                  </li>
+                  <hr width="80%" style="margin-left: 5%; border:1.25px solid black" />
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >President - Melody Hu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >Vice - Evan Yang</a
+                    >
+                  </li>
+                  <hr width="80%" style="margin-left: 5%; border:1.25px solid black" />
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >Secretary - Terri Kim</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >Treasurer - Pranati Gopakumar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >Activities Commissioner - Eimear M.</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              
+
+              <!-- SEARCH BAR -->
+            </ul>
+            <form
+              class="position-relative d-flex animation"
+              id="searchForm"
+              autocomplete="off"
+            >
+              <input
+                class="form-control me-2"
+                id="searchInput"
+                type="text"
+                placeholder="Search..."
+              />
+              <button class="btn btn-success" type="submit">Go</button>
+              <ul
+                class="list-group position-absolute w-100 d-none"
+                id="searchResults"
+                style="top: 100%; z-index: 1050"
+              ></ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR ABOVE -->
+
+
+
+
+
+    <!-- SCRIPT CONNECTIONS -->
+    <!-- DO NOT CHANGE AT ALL -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+    <!-- DO NOT CHANGE SRCIPTS ABOVE -->
+  </body>
+</html>
