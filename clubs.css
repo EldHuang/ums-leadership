@@ -1,0 +1,114 @@
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block
+}
+
+h2{
+    padding-top: 100px;
+    text-align: center;
+}
+
+hr{
+    margin-bottom: 0px;
+    width: 80%;
+    color: grey;
+    border: 1px solid grey
+}
+
+.styling{
+    margin: 70px 50px;
+    width: 22%;
+    height: 400px;
+    display: inline-flex;
+}
+
+.animation-hover{
+    background-color: #438eff;
+    transition: all 1s ease;
+    border: 1px solid #2f82ff
+}
+
+.animation-hover:hover{
+    background-color: #0e6fff;
+    border: 1px solid #0e6fff;
+}
+
+.existing-hover{
+    background-color: #dfdfdf;
+    transition: all 1s ease;
+    border: 1px solid #dfdfdf;
+}
+
+.existing-hover:hover{
+    background-color: rgb(143, 143, 143);
+    border: 1px solid rgb(125, 125, 125);
+}
+
+#down-button{
+    background-color: rgb(192, 192, 192);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+#down-button:hover{
+    background-color: rgb(124, 124, 124);
+    box-shadow: 7px 7px 5px rgb(56, 56, 56)
+}
+
+#button-down-header{
+    width: 30px;
+}
+
+.flex-center-outline{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.card-img-top{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(26, 131, 157);
+    border: 10px solid rgb(26, 131, 157);
+    border-radius: 10px
+}
+
+.shaded-box{
+    padding: 17px;
+    position: absolute;
+    left: 30%
+}
+
+.start-img{
+    border-radius: 5px 5px 0px 0px;
+    height: 150px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.btn-custom{
+    background-color: rgb(255, 140, 0);
+    padding: 3px solid rgb(255, 140, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 140, 0)
+}
+
+.btn-custom:hover{
+    background-color: rgb(194, 117, 23);
+    padding: 3px solid rgb(194, 117, 23);
+    border-radius: 5px;
+    border: 1px solid rgb(194, 117, 23);
+}

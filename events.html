@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- DO NOT CHANGE THE <head> PART -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMS Leadership - Events</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fascinate+Inline&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./events.css" />
+    <link rel="preconnect" href="./main.js" />
+  </head>
+  <!-- DO NOT CHANGE THE PART ABOVE -->
+
+  <!-- NAVIGATION BAR CODE -->
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black"
+      aria-label="Offcanvas navbar large"
+    >
+      <!-- TITLE -->
+      <div class="container-fluid">
+        <a class="nav-link navbar-brand text" href="index.html">
+          <img src="./assets/images/UMS-Logo.png" alt="Logo" height="40px" />
+          UMS Leadership</a
+        >
+
+        <!-- SMOOTHENER + NAVBAR OFFCANVAS (SMALL SCREEN) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <!-- NAVBAR OFFCANVAS NAME -->
+            <h2 class="fascinate-inline-regular">Menu</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- PAGES IN NAVBAR-->
+          <!-- change ONLY WHITE text -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./clubs.html">Clubs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./forms.html">Forms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./store.html">Student Store</a>
+              </li>
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown hover-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Associated Student Body - ASB
+                </a>
+                <!-- ASB OFFICERS -->
+                <ul class="dropdown-menu unravel-dropdown">
+                  <li>
+                    <a class="dropdown-item" href="./officers/dates.html"
+                      >ASB Meeting Dates</a
+                    >
+                  </li>
+                  <hr
+                    width="80%"
+                    style="margin-left: 5%; border: 1.25px solid black"
+                  />
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >President - Melody Hu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >Vice - Evan Yang</a
+                    >
+                  </li>
+                  <hr
+                    width="80%"
+                    style="margin-left: 5%; border: 1.25px solid black"
+                  />
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >Secretary - Terri Kim</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >Treasurer - Pranati Gopakumar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./officers/officers.html"
+                      >Activities Commissioner - Eimear M.</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- SEARCH BAR -->
+            </ul>
+            <form
+              class="position-relative d-flex animation"
+              id="searchForm"
+              autocomplete="off"
+            >
+              <input
+                class="form-control me-2"
+                id="searchInput"
+                type="text"
+                placeholder="Search..."
+              />
+              <button class="btn btn-success" type="submit">Go</button>
+              <ul
+                class="list-group position-absolute w-100 d-none"
+                id="searchResults"
+                style="top: 100%; z-index: 1050"
+              ></ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR ABOVE -->
+
+    <!-- HEADER -->
+    <div
+      class="row align-items-center rounded-3 border shadow-lg"
+      style="height: 100vh; padding: 0px 0px 20px 20px"
+    >
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Events</h1>
+        <p class="lead">
+          From Noon Time Activities (NTA's), all the way to dances, all the
+          information will be held on this page. Scroll down to find out more.
+        </p>
+        <div
+          class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+        >
+          <a href="#nta"
+            ><button class="btn btn-primary btn-lg">NTA's</button></a
+          >
+          <a href="#spirit"
+            ><button class="btn btn-success btn-lg">Spirit Days</button></a
+          >
+          <a href="#events"
+            ><button class="btn btn-warning btn-lg">Events</button></a
+          >
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img
+          class="rounded-lg-3"
+          src="./assets/images/city.jpg"
+          alt="City Picture"
+          width="720"
+          style="border-radius: 30px; border-color: #d4d4d4"
+        />
+      </div>
+
+      <div class="flex-center-outline">
+        <div id="down-button">
+          <a href="#content">
+            <img id="button-down-header" src="./assets/images/arrow-down.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID + EVENTS -->
+    <div class="grid-container" id="content">
+      <div class="grid-item" id="header">
+        <header>
+          <h2>NTA's, Spirit Days, and Events</h2>
+        </header>
+        <text>
+          <p style="text-align: center">
+            The basics, all the way to the finite details. All the info is right
+            here.
+          </p>
+        </text>
+      </div>
+
+      <div class="grid-item" id="nta">
+        <header>
+          <h2>NTA's</h2>
+        </header>
+        <text>
+          <div class="info-box">
+            <p>
+              Noontime Activites, better known as NTA's, are held at the
+              <a
+                href="https://www.google.com/maps/@37.2424893,-121.9346008,88m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                ><button class="btn btn-small btn-outline-danger">
+                  Spot
+                </button></a
+              >. Participation is not required, although strongly encouraged.
+              All sorts of games are played throughout the year! Join us at
+              lunch, in the spot, on Thursdays for a fun, fun-filled lunch.
+            </p>
+          </div>
+          <br />
+        </text>
+        <text>
+          <div class="content-box">
+            <ul>
+              <li>Spirit Days Begin After Labor Day</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+              <li>Another NTA - Date</li>
+            </ul>
+          </div>
+        </text>
+      </div>
+
+      <div class="grid-item" id="spirit">
+        <header>
+          <h2>Spirit Days</h2>
+        </header>
+        <text>
+          <div class="info-box">
+            Spirit Days at UMS are a fun way for YOU to show their school pride and creativity. Each Spirit Day has a unique theme that encourages everyone to participate and celebrate together. Get ready to dress up, have fun, and make amazing memories with classmates! Information is spread through posters, and Tiger Talk. On the day of, go to the <a
+            href="https://www.google.com/maps/@37.2424893,-121.9346008,88m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D"
+            target="_blank"><button class="btn btn-small btn-outline-danger">Spot</button></a> to collect your prize!
+          </div>
+        </text>
+        <text>
+          <div class="content-box">
+            <ul>
+              <li>Spirit Days Start in September!</li>
+              <li>More info coming soon!</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+              <li>A Spirit Day - Date</li>
+            </ul>
+          </div>
+        </text>
+      </div>
+
+      <div class="grid-item" id="events">
+        <header>
+          <h2>Events</h2>
+        </header>
+        <text>
+          <div class="info-box">
+            Events make a significant impact on our school. Your participation in dances, the blast, or multicutral night, makes everything more memorable. You might not think you'll enjoy these events, but in the end, everything comes together as a well-centered memory.
+          </div>
+        </text>
+        <text>
+          <div class="content-box">
+            <ul>
+              <li>Web Day - New Student Orientation - Friday, August 8th</li>
+              <li>First Day of School- Wednesday, August 13th </li>
+              <li>Back to School Night - Thursday, August 21st</li>
+              <li>First Dance - 7th & 8th Graders - Friday, September 26th</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+              <li>An Event</li>
+            </ul>
+          </div>
+        </text>
+      </div>
+    </div>
+
+    <!-- UP BUTTON FIXED -->
+    <style>
+      .up-button {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(212, 212, 212);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+      }
+
+      .up-button:hover {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(52, 126, 238);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+
+      .relative {
+        position: relative;
+        left: 5px;
+        bottom: 5px;
+      }
+
+      .fixed {
+        position: fixed;
+        left: 30px;
+        bottom: 30px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <div class="relative">
+      <div class="fixed">
+        <div class="up-button">
+          <a href="#top"
+            ><img src="./assets/images/arrow-up.svg" height="30px"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <!-- CONNECTED TO FOOTER.HTML CODE -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <div class="container background">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          Leadership 8, Union Middle School
+        </p>
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          aria-label="Bootstrap"
+        >
+          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p>Taught by Mrs. Utley</p>
+      </footer>
+    </div>
+
+
+    <!-- SCRIPT CONNECTIONS -->
+    <!-- DO NOT CHANGE AT ALL -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+    <!-- DO NOT CHANGE SRCIPTS ABOVE -->
+  </body>
+</html>
