@@ -1,0 +1,124 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    gap: 10px;
+    background-image: url(./assets/images/yosemite.jpg);
+    background-size: 120% auto
+}
+
+
+
+.email{
+    background-color: rgb(185, 185, 185);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 1s ease;
+    border: 0px solid black;
+}
+
+
+.grid-item{
+    background-color: #cccccc;
+    border-color: 3px black solid;
+    transition: all 1s ease;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.grid-item:hover{
+    background-color: #198754;
+    box-shadow: 10px 10px 10px rgb(36, 36, 36)
+}
+
+.grid-item:hover .email{
+    background-color: #146841;
+}
+
+@media (min-width:850px){
+    .grid-item{
+        font-size: 16px
+    }
+    
+}
+
+@media (max-width:849px){
+    .grid-item{
+        font-size: 8px
+    }
+    
+}
+
+#utley{
+    grid-area: 3 / 3 / 6 / 7;
+    transition: all 1s ease;
+}
+
+#utley:hover{
+    background-color: black;
+    color: white;
+}
+
+#utley-email{
+    background-color: rgb(185, 185, 185);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 1s ease;
+    border: 0px solid black;
+}
+
+#utley:hover #utley-email{
+    background-color: rgb(52, 52, 52);
+    color: white
+}
+
+#president{
+    grid-area: 4 / 13 / 7 / 17
+}
+
+#vice{
+    grid-area: 8 / 6 / 12 / 10
+}
+
+#secretary{
+    grid-area: 10 / 12 / 14 / 16;
+    transition: all 1s ease;
+}
+
+#secretary:hover{
+    background-color: rgb(255, 166, 0);
+}
+
+#treasuer{
+    grid-area: 14 / 4 / 18 / 8;
+    transition: all 1s ease;
+}
+
+#treasuer:hover{
+    background-color: rgb(255, 166, 0);
+}
+
+#sectres-email{
+    background-color: rgb(185, 185, 185);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 1s ease;
+    border: 0px solid black;
+}
+
+#treasuer:hover #sectres-email{
+    background-color: rgb(238, 154, 0);
+}
+
+#secretary:hover #sectres-email{
+    background-color: rgb(238, 154, 0);
+}
+
+#activities{
+    grid-area: 16 / 16 / 20 / 20
+}
+
+.margin-30{
+    margin-top: 30px;
+}

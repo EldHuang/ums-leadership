@@ -1,0 +1,166 @@
+/* FONTS */
+
+.text{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.dropdown {
+    font-family: "Akaya Telivigala", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+  
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* SEARCH BAR */
+/* SEARCH BAR ANIMATION*/
+
+.animation {
+    width: 250px;
+    transition: width 0.7s ease-out;
+}
+.animation:focus,
+.animation:hover {
+    width: 400px;
+}
+  
+/* DROPDOWN STYLE SEARCHBAR */
+  #searchResults {
+    max-height: 250px;
+    overflow-y: auto;
+    cursor: pointer;
+  }
+
+  #searchResults li {
+    padding: 0.5rem;
+  }
+
+  #searchResults li:hover {
+    background-color: #f0f0f0;
+  }
+
+
+
+
+
+
+
+/* DROPDOWN ASB LIST */
+.unravel-dropdown {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 10rem;
+    background-color: rgb(160, 160, 160);
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.175);
+    z-index: 1000;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hover-dropdown:hover .unravel-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  /* Items start invisible and slide up */
+  .unravel-dropdown .dropdown-item {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* Unravel with delays on hover */
+  .hover-dropdown:hover .dropdown-item:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+  }
+  .hover-dropdown:hover .dropdown-item:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.35s;
+  }
+  .hover-dropdown:hover .dropdown-item:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+  }
+  .hover-dropdown:hover .dropdown-item:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.65s;
+  }
+  
+
+
+
+/* BUTTON COLOR */
+.color-primary{
+  background-color: rgb(86, 183, 86);
+  transition: 0.5s ease
+}
+.color-primary:hover{
+  background-color:rgb(17, 153, 17);
+}
+
+
+.color-secondary{
+  background-color: rgb(250, 186, 66);
+  transition: all 0.5s ease
+}
+.color-secondary:hover{
+  background-color: rgb(255, 166, 0)
+}
+
+
+
+
+/* FEATURE HOME PAGE SECTION */
+/* INFORMATION "CLASS" BACKGROUND */
+.info-title{
+  text-align: center;
+  margin-left: 10%
+}
+
+
+.info-class{
+  font-weight: 900;
+  background-color: rgb(30, 189, 192);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0px 45%
+}
+
+.feature-icon{
+  display: inline-flex;
+  background-color: #3586ff;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3586ff80;
+  border-radius: 10px;
+}
+

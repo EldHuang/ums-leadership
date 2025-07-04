@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- DO NOT CHANGE THE <head> PART -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMS Leadership - Student Officers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fascinate+Inline&family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../officers/officers.css" />
+    <link rel="preconnect" href="../main.js" />
+  </head>
+  <!-- DO NOT CHANGE THE PART ABOVE -->
+
+  <!-- NAVIGATION BAR CODE -->
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black"
+      aria-label="Offcanvas navbar large"
+    >
+      <!-- TITLE -->
+      <div class="container-fluid">
+        <a class="nav-link navbar-brand text" href="index.html">
+          <img src="../assets/images/UMS-Logo.png" alt="Logo" height="40px" />
+          UMS Leadership</a
+        >
+
+        <!-- SMOOTHENER + NAVBAR OFFCANVAS (SMALL SCREEN) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <!-- NAVBAR OFFCANVAS NAME -->
+            <h2 class="fascinate-inline-regular">Menu</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- PAGES IN NAVBAR-->
+          <!-- change ONLY WHITE text -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../clubs.html">Clubs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../forms.html">Forms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../store.html">Student Store</a>
+              </li>
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown hover-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Associated Student Body - ASB
+                </a>
+                <!-- ASB OFFICERS -->
+                <ul class="dropdown-menu unravel-dropdown">
+                  <li>
+                    <a class="dropdown-item" href="../officers/dates.html"
+                      >ASB Meeting Dates</a
+                    >
+                  </li>
+                  <hr
+                    width="80%"
+                    style="margin-left: 5%; border: 1.25px solid black"
+                  />
+                  <li>
+                    <a class="dropdown-item" href="../officers/officers.html"
+                      >President - Melody Hu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../officers/officers.html"
+                      >Vice - Evan Yang</a
+                    >
+                  </li>
+                  <hr
+                    width="80%"
+                    style="margin-left: 5%; border: 1.25px solid black"
+                  />
+                  <li>
+                    <a class="dropdown-item" href="../officers/officers.html"
+                      >Secretary - Terri Kim</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../officers/officers.html"
+                      >Treasurer - Pranati Gopakumar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../officers/officers.html"
+                      >Activities Commissioner - Eimear M.</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- SEARCH BAR -->
+            </ul>
+            <form
+              class="position-relative d-flex animation"
+              id="searchForm"
+              autocomplete="off"
+            >
+              <input
+                class="form-control me-2"
+                id="searchInput"
+                type="text"
+                placeholder="Search..."
+              />
+              <button class="btn btn-success" type="submit">Go</button>
+              <ul
+                class="list-group position-absolute w-100 d-none"
+                id="searchResults"
+                style="top: 100%; z-index: 1050"
+              ></ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NAVBAR ABOVE -->
+
+    <div class="title-asb">
+      <div class="center-align">
+        <h1 class="dropdown" style="margin-top: 9.5%; color: white; font-size: 50px;">
+          &nbsp; Associated Student Body Representatives &nbsp;
+        </h1>
+      </div>
+      <div class="flex-center-outline text">
+        <h2>Student Leaders. Real Answers.</h2>
+      </div>
+      <div class="flex-center-outline-button">
+        <div id="down-button">
+          <a href="#content-body">
+            <img id="button-down-header" src="../assets/images/arrow-down.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="grid-container" id="content-body">
+
+      <div class="grid-item orange-container" id="president">
+        <div class="orange-title title-box dropdown" style="font-size: 20px;">
+          President - Melody Hu
+          <a href="mailto:"><button class="btn btn-warning btn-sm" style="float: right;">Email</button></a>
+        </div>
+        <div class="orange-content content-box text">
+          Content
+        </div>
+      </div>
+
+      <div class="grid-item green-container" id="vice-prez">
+        <div class="green-title title-box dropdown" style="font-size: 20px;">
+          Vice President - Evan Yang
+          <a href="mailto:"><button class="btn btn-success btn-sm" style="float: right;">Email</button></a>
+        </div>
+        <div class="green-content content-box text">
+          Content
+        </div>
+      </div>
+
+      <div class="grid-item green-container" id="treasurer" style="font-size: 20px;">
+        <div class="green-title title-box dropdown">
+          Treasurer - Pranati Gopakumar
+          <a href="mailto:"><button class="btn btn-success btn-sm" style="float: right;">Email</button></a>
+        </div>
+        <div class="green-content content-box text">
+          Content
+        </div>
+      </div>
+
+      <div class="grid-item orange-container" id="secretary" style="font-size: 20px;">
+        <div class="orange-title title-box dropdown">
+          Secretary - Terri Kim
+          <a href="mailto:"><button class="btn btn-warning btn-sm" style="float: right;">Email</button></a>
+        </div>
+        <div class="orange-content content-box text">
+          Content
+        </div>
+      </div>
+
+      <div class="grid-item white-container" id="activites" style="font-size: 16px;">
+        <div class="white-title title-box dropdown">
+          Activites Commissioner - Eimear M.
+          <a href="mailto:"><button class="btn btn-light btn-sm" style="float: right;">Email</button></a>
+        </div>
+        <div class="white-content content-box text">
+          Content
+        </div>
+      </div>
+    </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+      .up-button {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(212, 212, 212);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+      }
+
+      .up-button:hover {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(52, 126, 238);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+
+      .relative {
+        position: relative;
+        left: 5px;
+        bottom: 5px;
+      }
+
+      .fixed {
+        position: fixed;
+        left: 30px;
+        bottom: 30px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <div class="relative">
+      <div class="fixed">
+        <div class="up-button">
+          <a href="#top"
+            ><img src="../assets/images/arrow-up.svg" height="30px"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <!-- CONNECTED TO FOOTER.HTML CODE -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <div class="container background">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          Leadership 8, Union Middle School
+        </p>
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          aria-label="Bootstrap"
+        >
+          <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p>Taught by Mrs. Utley</p>
+      </footer>
+    </div>
+
+    <!-- SCRIPT CONNECTIONS -->
+    <!-- DO NOT CHANGE AT ALL -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../main.js"></script>
+    <!-- DO NOT CHANGE SRCIPTS ABOVE -->
+  </body>
+</html>
